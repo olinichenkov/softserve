@@ -1,0 +1,19 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import static java.lang.Math.*;
+
+public class FirstLesson {
+    public static void main (String[] args) throws IOException {
+
+        System.out.println("Введіть радіус ліжка");
+        BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
+        int radius = Integer.parseInt(br.readLine());
+        System.out.println ("Діаметр " + 2* radius);
+        System.out.println ("Довжина ліжка "  + 2*Math.PI*radius);
+        System.out.println ("Площа ліжка " + PI* pow(radius,2));
+        System.out.println("Having fun :)");
+    }
+}
+
